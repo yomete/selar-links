@@ -1,0 +1,50 @@
+.main {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(231, 219, 229, 0.9),
+      rgba(231, 219, 229, 0.7)
+    ),
+    url(/assets/img/hero.png) no-repeat 50%;
+  width: 100%;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__body {
+    text-align: center;
+    &__avatar {
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+      }
+    }
+    &__description {
+      margin: 20px auto;
+      p {
+        font-size: 14px;
+      }
+    }
+    &__links {
+      display: flex;
+      flex-direction: column;
+      a {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #000;
+        text-decoration: none;
+        padding: 15px 0;
+        margin-bottom: 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+        transition: all 0.1s ease-in;
+        &:hover {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
